@@ -47,7 +47,7 @@ reference. It was modified such that the entire path was reconstructed and it wi
 number of different shortest paths specified by the user.  
   
 ## Sequential Search Algorithm (Y2S1)  
-Language used: Python
+Language used: Python  
 Main objective of this project is to improve on the brute force sequential search algorithm 
 used to find a certain query string within a string, in terms of its time complexity. Analysis 
 of our own algorithm was done after testing that our algorithm worked. 2 algorithms were needed 
