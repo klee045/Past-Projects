@@ -1,0 +1,2 @@
+<<COURSE>> Registration Successful
+This email is to inform you that you have successfully registered for <<COURSE>>. You have been removed from the wait list.
