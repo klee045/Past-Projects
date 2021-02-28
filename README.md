@@ -3,12 +3,12 @@ Current year/sem: Y2S2.
 These are the projects I have done so far, arranged according to the year and semester. More details can be found under each project description section.  
   
 **Table of Contents**
-- [Canteen System (Y1S1)](Past-Projects#canteen-system--y1s1-)
-- [Exploration on Epilepsy Data (Y1S2)](#exploration-on-epilepsy-data--y1s2-)
-- [Graph Search Algorithm (Y2S1)](#graph-search-algorithm--y2s1-)
-- [Sequential Search Algorithm (Y2S1)](#sequential-search-algorithm--y2s1-)
-- [Course Registration System (Y2S1)](#course-registration-system--y2s1-)
-- [Database Design & Implementation (Y2S1)](#database-design---implementation--y2s1-)
+- [Canteen System (Y1S1)](#canteen-system-y1s1)
+- [Exploration on Epilepsy Data (Y1S2)](#exploration-on-epilepsy-data-y1s2)
+- [Graph Search Algorithm (Y2S1)](#graph-search-algorithm-y2s1)
+- [Sequential Search Algorithm (Y2S1)](#sequential-search-algorithm-y2s1)
+- [Course Registration System (Y2S1)](#course-registration-system-y2s1)
+- [Database Design & Implementation (Y2S1)](#database-design--implementation-y2s1)
 
 
 ## Canteen System (Y1S1)
