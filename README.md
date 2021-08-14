@@ -1,5 +1,5 @@
 # Past-Projects  
-Current year/sem: Y2S2.  
+Current year/sem: Y3S1.  
 These are the projects I have done so far, arranged according to the year and semester. More details can be found under each project description section.  
   
 **Table of Contents**
@@ -72,3 +72,11 @@ of the project was to design and refine an ER diagram, specify the functional de
 that it satisfies at least 3NF and then implementing it in MSSQL. Upon implementation, the task was 
 to populate the database and then using queries to answer the questions specified by the manual.  
     
+## Dengue Mosquito Alert Android App (Y2S2)
+Language used: Java
+Program used: Android
+WIP
+
+## Game to learn Computer Science Concepts (Y2S2)
+Program used: Godot
+WIP
