@@ -9,6 +9,8 @@ These are the projects I have done so far, arranged according to the year and se
 - [Sequential Search Algorithm (Y2S1)](#sequential-search-algorithm-y2s1)
 - [Course Registration System (Y2S1)](#course-registration-system-y2s1)
 - [Database Design & Implementation (Y2S1)](#database-design--implementation-y2s1)
+- [Dengue Mosquito Alert Android App (Y2S2)](#dengue-mosquito-alert-android-app-y2s1)
+- [Game to learn Computer Science Concepts (Y2S2)](#game-to-learn-computer-science-concepts-y2s1)
 
 
 ## Canteen System (Y1S1)
@@ -73,15 +75,15 @@ that it satisfies at least 3NF and then implementing it in MSSQL. Upon implement
 to populate the database and then using queries to answer the questions specified by the manual.
 
 ## Dengue Mosquito Alert Android App (Y2S2)
-Language used: Java
-Program used: Android
+Language used: Java  
+Program used: Android  
 To learn a typical application software development lifecycle, we created an app based on the data
 from data.gov.sg and one of the core issues during that period of time which was the rise in dengue
 mosquitoes. Core functions of the app are having a checklist for symptoms of dengue fever, a checklist for
 users to carry out steps of the Mozzie Wipeout and reminders to carry out the steps of Mozzie Wipeout.
 
 ## Game to learn Computer Science Concepts (Y2S2)
-Program used: Godot
+Program used: Godot  
 To expand on the software development concepts learnt in the mod, in which NozzieMozzie was developed,
 a task to develop an educational game to learn Computer Science concepts was given. The game had to have
 worlds you can traverse while being able to communicate with other players as well as the teacher hosting.
