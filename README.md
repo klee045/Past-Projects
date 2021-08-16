@@ -9,8 +9,8 @@ These are the projects I have done so far, arranged according to the year and se
 - [Sequential Search Algorithm (Y2S1)](#sequential-search-algorithm-y2s1)
 - [Course Registration System (Y2S1)](#course-registration-system-y2s1)
 - [Database Design & Implementation (Y2S1)](#database-design--implementation-y2s1)
-- [Dengue Mosquito Alert Android App (Y2S2)](#dengue-mosquito-alert-android-app-y2s1)
-- [Game to learn Computer Science Concepts (Y2S2)](#game-to-learn-computer-science-concepts-y2s1)
+- [Dengue Mosquito Alert Android App (Y2S2)](#dengue-mosquito-alert-android-app-y2s2)
+- [Game to learn Computer Science Concepts (Y2S2)](#game-to-learn-computer-science-concepts-y2s2)
 
 
 ## Canteen System (Y1S1)
