@@ -1,0 +1,242 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/font/GameFont_Homepage.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/background/3.png" type="Texture" id=2]
+[ext_resource path="res://world/world.gd" type="Script" id=3]
+[ext_resource path="res://assets/font/AvatarSelectionBigTitle.tres" type="DynamicFont" id=4]
+[ext_resource path="res://assets/font/SettingPageButtonFont.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/theme/select_button_theme.tres" type="StyleBox" id=6]
+[ext_resource path="res://assets/theme/non_select_button_theme.tres" type="StyleBox" id=7]
+[ext_resource path="res://assets/font/RegisterPageErrorPopup.tres" type="DynamicFont" id=8]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 25.8319, 14.9723 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnButton" type="Button" parent="."]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 199.0
+margin_bottom = 104.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ReturnButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 5 )
+text = "Return"
+align = 1
+valign = 1
+
+[node name="Title" type="Label" parent="."]
+margin_left = 104.0
+margin_top = 112.0
+margin_right = 900.0
+margin_bottom = 163.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Please select one world before proceed"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FirstThreeWorld" type="HBoxContainer" parent="."]
+margin_left = 200.0
+margin_top = 192.0
+margin_right = 820.0
+margin_bottom = 272.0
+rect_min_size = Vector2( 0, 80 )
+custom_constants/separation = 40
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="world 1" type="Button" parent="FirstThreeWorld"]
+margin_right = 180.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 180, 80 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/disabled = ExtResource( 6 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = ExtResource( 1 )
+text = "world 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="world 2" type="Button" parent="FirstThreeWorld"]
+margin_left = 220.0
+margin_right = 400.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 180, 0 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/disabled = ExtResource( 6 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = ExtResource( 1 )
+text = "world 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="world 3" type="Button" parent="FirstThreeWorld"]
+margin_left = 440.0
+margin_right = 620.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 180, 0 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = ExtResource( 1 )
+text = "world 3"
+
+[node name="NextThreeWorld" type="HBoxContainer" parent="."]
+margin_left = 200.0
+margin_top = 296.0
+margin_right = 820.0
+margin_bottom = 376.0
+rect_min_size = Vector2( 0, 80 )
+custom_constants/separation = 40
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="world 4" type="Button" parent="NextThreeWorld"]
+margin_right = 180.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 180, 0 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = ExtResource( 1 )
+text = "world 4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="world 5" type="Button" parent="NextThreeWorld"]
+margin_left = 220.0
+margin_right = 400.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 180, 0 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = ExtResource( 1 )
+text = "world 5"
+
+[node name="world 6" type="Button" parent="NextThreeWorld"]
+margin_left = 440.0
+margin_right = 620.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 180, 0 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = ExtResource( 1 )
+text = "world 6"
+
+[node name="LastThreeWorld" type="HBoxContainer" parent="."]
+margin_left = 200.0
+margin_top = 400.0
+margin_right = 820.0
+margin_bottom = 480.0
+rect_min_size = Vector2( 0, 80 )
+custom_constants/separation = 40
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="world 7" type="Button" parent="LastThreeWorld"]
+margin_right = 180.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 180, 0 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = ExtResource( 1 )
+text = "world 7"
+
+[node name="world 8" type="Button" parent="LastThreeWorld"]
+margin_left = 220.0
+margin_right = 400.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 180, 0 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = ExtResource( 1 )
+text = "world 8"
+
+[node name="world 9" type="Button" parent="LastThreeWorld"]
+margin_left = 440.0
+margin_right = 620.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 180, 0 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = ExtResource( 1 )
+text = "world 9"
+
+[node name="Popup" type="Popup" parent="."]
+margin_left = 264.0
+margin_top = 512.0
+margin_right = 752.0
+margin_bottom = 560.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Popup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Room is full. Please choose another world."
+align = 1
+valign = 1
+[connection signal="button_down" from="ReturnButton" to="." method="_on_ReturnButton_button_down"]
+[connection signal="pressed" from="FirstThreeWorld/world 1" to="." method="_on_world_1_pressed"]
+[connection signal="pressed" from="FirstThreeWorld/world 2" to="." method="_on_world_2_pressed"]
+[connection signal="pressed" from="FirstThreeWorld/world 3" to="." method="_on_world_3_pressed"]
+[connection signal="pressed" from="NextThreeWorld/world 4" to="." method="_on_world_4_pressed"]
+[connection signal="pressed" from="NextThreeWorld/world 5" to="." method="_on_world_5_pressed"]
+[connection signal="pressed" from="NextThreeWorld/world 6" to="." method="_on_world_6_pressed"]
+[connection signal="pressed" from="LastThreeWorld/world 7" to="." method="_on_world_7_pressed"]
+[connection signal="pressed" from="LastThreeWorld/world 8" to="." method="_on_world_8_pressed"]
+[connection signal="pressed" from="LastThreeWorld/world 9" to="." method="_on_world_9_pressed"]

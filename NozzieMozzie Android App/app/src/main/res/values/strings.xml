@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">NozzieMozzie</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="report">REPORT</string>
+    <string name="news">News</string>
+    <string name="location">LOCATION</string>
+    <string name="mozziewipeout">MOZZIE <br /> WIPEOUT</string>
+    <string name="settings">Settings</string>
+    <string name="symptoms_checker">SYMPTOMS <br /> CHECKER</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="do_your_part">DO YOUR PART</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_location">Map</string>
+    <string name="channel_name">NozzieMozzieChannel</string>
+    <string name="channel_description">NozzieMozzieChannelDescription</string>
+</resources>

@@ -1,0 +1,88 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://avatars/avatar_3_4/C2 A1.png" type="Texture" id=1]
+[ext_resource path="res://avatars/avatar_3_4/C2 A2.png" type="Texture" id=2]
+[ext_resource path="res://avatars/OtherPlayerAvatar.gd" type="Script" id=3]
+[ext_resource path="res://avatars/avatar_3_4/C2 A4.png" type="Texture" id=4]
+[ext_resource path="res://avatars/avatar_3_4/C2 F1.png" type="Texture" id=5]
+[ext_resource path="res://avatars/avatar_3_4/C2 A3.png" type="Texture" id=6]
+[ext_resource path="res://avatars/avatar_3_4/C2 F4.png" type="Texture" id=7]
+[ext_resource path="res://avatars/avatar_3_4/C2 F3.png" type="Texture" id=8]
+[ext_resource path="res://avatars/avatar_3_4/C2 R1.png" type="Texture" id=9]
+[ext_resource path="res://avatars/avatar_3_4/C2 R3.png" type="Texture" id=10]
+[ext_resource path="res://avatars/avatar_3_4/C2 F2.png" type="Texture" id=11]
+[ext_resource path="res://avatars/avatar_3_4/C2 R2.png" type="Texture" id=12]
+[ext_resource path="res://avatars/avatar_3_4/C2 R4.png" type="Texture" id=13]
+[ext_resource path="res://avatars/avatar_3_4/C2 HIT.png" type="Texture" id=14]
+[ext_resource path="res://assets/font/avatarUsername.tres" type="DynamicFont" id=15]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 19.7769
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 11 ), ExtResource( 8 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 6 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "attack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "hit",
+"speed": 5.0
+} ]
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 1.26276, 0 )
+frames = SubResource( 2 )
+animation = "idle"
+frame = 1
+playing = true
+
+[node name="GUI" type="Control" parent="."]
+margin_left = -33.2806
+margin_top = -43.7304
+margin_right = 35.7194
+margin_bottom = -24.7304
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Username" type="Label" parent="GUI"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 15 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Username"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="Label" parent="GUI"]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClearMessage" type="Timer" parent="."]

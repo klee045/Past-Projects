@@ -1,0 +1,268 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/font/loginBigTitle.tres" type="DynamicFont" id=1]
+[ext_resource path="res://RegisterPage/NextButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://RegisterPage/GoBack_button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/font/RegisterPageTitleSmall.tres" type="DynamicFont" id=4]
+[ext_resource path="res://RegisterPage/RegisterPage.gd" type="Script" id=5]
+[ext_resource path="res://assets/font/RegisterPageErrorPopup.tres" type="DynamicFont" id=6]
+[ext_resource path="res://assets/background/4.jpg" type="Texture" id=7]
+[ext_resource path="res://assets/font/RegisterPageEmailPopup.tres" type="DynamicFont" id=8]
+
+[node name="RegisterPage" type="Control"]
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="NinePatchRect" parent="."]
+margin_left = -3.0
+margin_top = -5.0
+margin_right = 1024.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 640, 360 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 307.0
+margin_top = 130.0
+margin_right = -323.0
+margin_bottom = -44.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="background/VBoxContainer"]
+margin_left = 18.0
+margin_right = 378.0
+margin_bottom = 57.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Register Screen"
+align = 1
+valign = 1
+
+[node name="UsernameTitle" type="Label" parent="background/VBoxContainer"]
+margin_top = 103.0
+margin_right = 397.0
+margin_bottom = 128.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Username"
+
+[node name="Username" type="LineEdit" parent="background/VBoxContainer"]
+margin_top = 132.0
+margin_right = 397.0
+margin_bottom = 156.0
+
+[node name="PasswordTitle" type="Label" parent="background/VBoxContainer"]
+margin_top = 160.0
+margin_right = 397.0
+margin_bottom = 185.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Password"
+
+[node name="Password" type="LineEdit" parent="background/VBoxContainer"]
+margin_top = 189.0
+margin_right = 397.0
+margin_bottom = 213.0
+
+[node name="ConfirmPasswordTitle" type="Label" parent="background/VBoxContainer"]
+margin_top = 217.0
+margin_right = 397.0
+margin_bottom = 242.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Confirm Password"
+
+[node name="ConfirmPassword" type="LineEdit" parent="background/VBoxContainer"]
+margin_top = 246.0
+margin_right = 397.0
+margin_bottom = 270.0
+
+[node name="EmailTitle" type="Label" parent="background/VBoxContainer"]
+margin_top = 274.0
+margin_right = 397.0
+margin_bottom = 299.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Email"
+
+[node name="Email" type="LineEdit" parent="background/VBoxContainer"]
+margin_top = 303.0
+margin_right = 397.0
+margin_bottom = 327.0
+
+[node name="NextButton" parent="background/VBoxContainer" instance=ExtResource( 2 )]
+margin_left = 118.0
+margin_top = 371.0
+margin_right = 278.0
+margin_bottom = 431.0
+rect_min_size = Vector2( 160, 60 )
+size_flags_horizontal = 4
+size_flags_vertical = 10
+script = null
+
+[node name="Label" type="Label" parent="background/VBoxContainer/NextButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 4 )
+text = "Next"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UsernameError" type="Popup" parent="background"]
+visible = true
+margin_left = 699.0
+margin_top = 261.0
+margin_right = 943.0
+margin_bottom = 303.0
+rect_scale = Vector2( 0.628959, 0.764356 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="background/UsernameError"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Invalid username"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PasswordInvalidError" type="Popup" parent="background"]
+visible = true
+margin_left = 699.0
+margin_top = 301.0
+margin_right = 1182.0
+margin_bottom = 390.0
+rect_scale = Vector2( 0.628959, 0.764356 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="background/PasswordInvalidError"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -789.923, -102.139 )
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Password must be at least 10 characters,
+containing at least 1 uppercase, 
+1 lowercase and 1 special character."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PasswordMatchError" type="Popup" parent="background"]
+visible = true
+margin_left = 723.0
+margin_top = 373.0
+margin_right = 967.0
+margin_bottom = 415.0
+rect_scale = Vector2( 0.628959, 0.764356 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="background/PasswordMatchError"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -789.923, -102.139 )
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Passwords do not match"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EmailInvalidError" type="Popup" parent="background"]
+visible = true
+margin_left = 683.0
+margin_top = 429.0
+margin_right = 927.0
+margin_bottom = 471.0
+rect_scale = Vector2( 0.628959, 0.764356 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="background/EmailInvalidError"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -2.07675
+margin_bottom = -2.07675
+rect_pivot_offset = Vector2( -789.923, -102.139 )
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Invalid email"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AlreadyRegistered" type="Popup" parent="background"]
+visible = true
+margin_right = 291.0
+margin_bottom = 61.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="background/AlreadyRegistered"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 587.0
+margin_top = 501.0
+margin_right = 587.0
+margin_bottom = 501.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.996078, 0.0352941, 0.0352941, 1 )
+text = "Email is already registered"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="backButton" parent="." instance=ExtResource( 3 )]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 228.0
+margin_bottom = 120.0
+custom_fonts/font = ExtResource( 4 )
+
+[node name="HTTPRequestRegister" type="HTTPRequest" parent="."]
+
+[node name="HTTPAllUser" type="HTTPRequest" parent="."]
+[connection signal="text_changed" from="background/VBoxContainer/Password" to="." method="_on_Password_text_changed"]
+[connection signal="text_changed" from="background/VBoxContainer/ConfirmPassword" to="." method="_on_ConfirmPassword_text_changed"]
+[connection signal="pressed" from="background/VBoxContainer/NextButton" to="." method="_on_NextButton_pressed"]
+[connection signal="request_completed" from="HTTPRequestRegister" to="." method="_on_register_request_completed"]
+[connection signal="request_completed" from="HTTPAllUser" to="." method="_on_HTTPAllUser_request_completed"]
