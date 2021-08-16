@@ -14,8 +14,8 @@ These are the projects I have done so far, arranged according to the year and se
 
 
 ## Canteen System (Y1S1)
-Language used: Python
-Modules used: PyQt5
+Language used: Python  
+Modules used: PyQt5  
 The project requirements are to create an interactive application, whether console
 or GUI, that tracks the menu items in a specific canteen on campus.
 Depending on the day and time, different items will be available and the menu shown
@@ -28,8 +28,8 @@ struggle was reading the PyQt5 documentation as it was mainly written in C++
 which I have yet to learn.
 
 ## Exploration on Epilepsy Data (Y1S2)
-Language used: Python (Jupyter Notebook)
-Modules used: seaborn, scikit, numpy, pandas, matplotlib
+Language used: Python (Jupyter Notebook)  
+Modules used: seaborn, scikit, numpy, pandas, matplotlib  
 This project served as an introduction to Data Science to apply the basic concepts
 and analysis methods taught as well as to explore additional tools not yet taught
 by the module itself. Our main objective was to detect epilepsy and see if we are
@@ -41,7 +41,7 @@ logistic regressions. Branching out from the basics, my group and I went on to e
 SVM, parallel plots, 5-fold validation.
 
 ## Graph Search Algorithm (Y2S1)
-Language used: Java
+Language used: Java  
 This project required us to use our knowledge of BFS and/or other graph traversal algorithms
 to find the shortest k paths from every node to certain nodes marked out as hospitals.
 A multi-source BFS algorithm, which only gave the length of the shortest path, was used as
@@ -49,7 +49,7 @@ reference. It was modified such that the entire path was reconstructed and it wi
 number of different shortest paths specified by the user.
 
 ## Sequential Search Algorithm (Y2S1)
-Language used: Python
+Language used: Python  
 Main objective of this project is to improve on the brute force sequential search algorithm
 used to find a certain query string within a string, in terms of its time complexity. Analysis
 of our own algorithm was done after testing that our algorithm worked. 2 algorithms were needed
@@ -59,7 +59,7 @@ second algorithm relied on matching the ASCII sum of k characters, where k is th
 characters in the query string.
 
 ## Course Registration System (Y2S1)
-Language used: Java
+Language used: Java  
 This was a console application, mimicking the actual course registration system used. It was
 a chance to train our minds to design an application using Object-Oriented Programming principles.
 Similar features such as having Admin and Student accounts, Admins having limited access to certain
@@ -68,7 +68,7 @@ The system was designed to notify the user via email when they are on a waiting 
 opened up for them.
 
 ## Database Design & Implementation (Y2S1)
-Language used: SQL
+Language used: SQL  
 To put the theory taught to use, a database based on an online shop needed to be designed. The flow
 of the project was to design and refine an ER diagram, specify the functional dependencies, ensure
 that it satisfies at least 3NF and then implementing it in MSSQL. Upon implementation, the task was
